@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="#" onsubmit="myFunction()">
+      <fieldset>
+        <legend>BIO-DATA</legend>
+        <label for="fname">First Name:</label><br />
+        <input type="text" name="fname" id="fname" required /><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" name="lname" id="lname" required /><br />
+        <label for="email">Email Address:</label><br />
+        <input type="email" name="email" id="email" required /><br />
+        <p>Gender</p>
+        <label for="male">Male</label><br />
+        <input
+          type="radio"
+          name="gender"
+          id="male"
+          value="male"
+          required
+        /><br />
+        <label for="female">Female</label><br />
+        <input
+          type="radio"
+          name="gender"
+          id="female"
+          value="female"
+          required
+        /><br /><br />
+        <label for="pword">Password:</label><br />
+        <input type="password" name="pword" id="pword" required /><br />
+        <label for="pnumber">Phone Number:</label><br />
+        <input type="tel" name="pnumber" id="pnumber" required /><br />
+        <br />
+        <input type="submit" value="submit" /><br />
+      </fieldset>
+    </form>
+
+    <script>
+      function myFunction() {
+        alert("Your response has been recorded and submitted successfully");
+      }
+    </script>
+  </body>
+</html>
